@@ -1,0 +1,35 @@
+# Create a new virtual environment
+python -m venv new_env
+
+# Activate it
+# On Windows:
+new_env\Scripts\activate
+# On macOS/Linux:
+source new_env/bin/activate
+
+# Core ML and data processing libraries
+pip install numpy==1.23.5
+pip install tensorflow==2.10.0
+pip install tensorflow-directml-plugin
+pip install scikit-learn
+pip install tqdm
+
+# Audio processing
+pip install librosa
+
+# Visualization
+pip install matplotlib
+pip install seaborn
+
+# Model format conversion
+pip install tf2onnx
+pip install onnx
+
+pip install onnxruntime
+pip install streamlit
+
+
+# Then install other dependencies
+pip install scikit-learn tqdm matplotlib seaborn
+pip install librosa soundfile audioread
+pip install tf2onnx onnx

@@ -1,0 +1,38 @@
+{
+  "class_names": [
+    "sing",
+    "pin",
+    "khong_vong",
+    "saw",
+    "ranad",
+    "khean"
+  ],
+  "feature_type": "mel_spectrogram",
+  "n_mels": 128,
+  "sample_rate": 44100,
+  "segment_duration": 6.0,
+  "n_fft": 2048,
+  "hop_length": 512,
+  "fmax": 8000,
+  "input_shape": [
+    128,
+    null,
+    1
+  ],
+  "kfold_cross_validation": true,
+  "kfold_results": {
+    "fold_accuracies": [
+      0.973593533039093,
+      0.8737083673477173,
+      0.9632605910301208,
+      0.9758897423744202,
+      0.981630265712738
+    ],
+    "mean_accuracy": 0.9536164999008179,
+    "std_accuracy": 0.04039373317754853
+  },
+  "label_smoothing": 0.1,
+  "dropout_rate": 0.6,
+  "l2_regularization": 0.003,
+  "softmax_temperature": 1.5
+}
