@@ -1,10 +1,10 @@
 {
   "class_names": [
-    "sing",
-    "pin",
-    "khong_vong",
-    "saw",
     "ranad",
+    "saw",
+    "sing",
+    "khong_vong",
+    "pin",
     "khean"
   ],
   "feature_type": "mel_spectrogram",
@@ -22,14 +22,14 @@
   "kfold_cross_validation": true,
   "kfold_results": {
     "fold_accuracies": [
-      0.973593533039093,
-      0.8737083673477173,
-      0.9632605910301208,
-      0.9758897423744202,
-      0.981630265712738
+      0.9747416377067566,
+      0.9977037906646729,
+      0.9517795443534851,
+      0.9667049050331116,
+      0.9988518953323364
     ],
-    "mean_accuracy": 0.9536164999008179,
-    "std_accuracy": 0.04039373317754853
+    "mean_accuracy": 0.9779563546180725,
+    "std_accuracy": 0.018158963463628965
   },
   "label_smoothing": 0.1,
   "dropout_rate": 0.6,

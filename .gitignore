@@ -1,5 +1,12 @@
 .new_env/
 dataset/
+models/
+model/
+model_k_fold/
+model_82percent/
+model_v1/
+model_v2_use_old_code_noob/
+
 
 
 # Cached Python bytecode

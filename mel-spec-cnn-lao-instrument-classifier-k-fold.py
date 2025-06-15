@@ -25,7 +25,7 @@ if physical_devices:
 class Config:
     # Audio parameters
     SAMPLE_RATE = 44100
-    SEGMENT_DURATION = 6.0
+    SEGMENT_DURATION = 5.0
     
     # Feature extraction parameters
     N_FFT = 2048
@@ -61,7 +61,7 @@ class Config:
     
     # Paths
     DATA_PATH = "dataset"
-    MODEL_SAVE_PATH = "models/mel_cnn_model_6sec"
+    MODEL_SAVE_PATH = "models/mel_cnn_model_5sec"
     
     # Temperature scaling for prediction
     SOFTMAX_TEMPERATURE = 1.5  # Values > 1 make predictions less confident
@@ -581,7 +581,7 @@ def convert_to_onnx(model, model_path):
     onnx_model, _ = tf2onnx.convert.from_keras(model, input_signature=input_signature, opset=13)
     
     # Save ONNX model
-    onnx_path = os.path.join(model_path, 'mel_cnn_model_6sec.onnx')
+    onnx_path = os.path.join(model_path, 'mel_cnn_model_5sec.onnx')
     onnx.save_model(onnx_model, onnx_path)
     print(f"ONNX model saved to {onnx_path}")
     
@@ -640,4 +640,5 @@ def main():
     print(f"\nTraining complete! 6-second CNN model saved to {Config.MODEL_SAVE_PATH}")
 
 if __name__ == "__main__":
-    main()
+    main()\
+    

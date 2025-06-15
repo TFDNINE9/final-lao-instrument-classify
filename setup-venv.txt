@@ -1,13 +1,14 @@
+## Python should be in version 3.9.13
 # Create a new virtual environment
 python -m venv new_env
 
 # Activate it
 # On Windows:
 new_env\Scripts\activate
-# On macOS/Linux:
-source new_env/bin/activate
 
 # Core ML and data processing libraries
+
+
 pip install numpy==1.23.5
 pip install tensorflow==2.10.0
 pip install tensorflow-directml-plugin
@@ -27,6 +28,7 @@ pip install onnx
 
 pip install onnxruntime
 pip install streamlit
+pip install pyaudio
 
 
 # Then install other dependencies

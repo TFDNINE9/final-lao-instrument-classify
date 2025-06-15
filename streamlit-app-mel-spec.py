@@ -58,7 +58,7 @@ if model_metadata is not None:
     N_MELS = model_metadata.get('n_mels', 128)
     N_FFT = model_metadata.get('n_fft', 2048)
     HOP_LENGTH = model_metadata.get('hop_length', 512)
-    SEGMENT_DURATION = model_metadata.get('segment_duration', 6.0)  # Now 6.0
+    SEGMENT_DURATION = model_metadata.get('segment_duration', 5.0)  # Now 5.0
     FMAX = model_metadata.get('fmax', 8000)
     CLASS_LABELS = model_metadata.get('class_names', [])
 else:
@@ -67,7 +67,7 @@ else:
     N_MELS = 128
     N_FFT = 2048
     HOP_LENGTH = 512
-    SEGMENT_DURATION = 6.0  # Now 6.0
+    SEGMENT_DURATION = 5.0  # Now 5.0
     FMAX = 8000
     CLASS_LABELS = ['background', 'khean', 'khong_vong', 'pin', 'ranad', 'saw', 'sing']
 
@@ -131,7 +131,7 @@ INSTRUMENT_INFO = {
     }
 }
 
-def process_audio_with_best_segment(audio, sr, segment_duration=6.0):
+def process_audio_with_best_segment(audio, sr, segment_duration=5.0):
     """Extract the best segment from audio based on energy and spectral content"""
     # Calculate segment length in samples
     segment_len = int(segment_duration * sr)
